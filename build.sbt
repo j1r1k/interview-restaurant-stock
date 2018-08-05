@@ -11,5 +11,5 @@ lazy val root = (project in file(".")).
 
     resolvers += Resolver.bintrayRepo("hseeberger", "maven"),
 
-    libraryDependencies ++= akkaHttp ++ akkaStream ++ circe ++ akkaHttpCirce ++ scalaTest
+    libraryDependencies ++= akkaHttp ++ circe ++ akkaHttpCirce ++ scalaTest
   )

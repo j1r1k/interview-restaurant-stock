@@ -38,6 +38,16 @@ Status Code: *404 Not Found*
 
 ## Design Decisions
 
+##### Libraries
+
+- akka
+- akka-http
+- akka-http-circe
+- circe
+
+- scalatest
+- scalacheck
+
 ##### Data Storage
 - The only implementation of `StockStorage` trait is `StockActorStorage` that is internally managing state via an actor. It is a clean way to manage state of the application.
 

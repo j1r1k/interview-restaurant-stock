@@ -10,11 +10,6 @@ object Dependencies {
     "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion % Test
   )
 
-  lazy val akkaStream: Seq[ModuleID] = Seq(
-    "com.typesafe.akka" %% "akka-stream" % akkaStreamVersion
-  )
-
-
   lazy val circe: Seq[ModuleID] = Seq(
     "io.circe" %% "circe-core" % circeVersion,
     "io.circe" %% "circe-generic" % circeVersion,
