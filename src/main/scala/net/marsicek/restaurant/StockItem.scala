@@ -27,6 +27,11 @@ object StockItemUpdate {
 }
 
 case class StockItem(id: StockItemId, name: String, quantity: StockItemQuantity) {
+  /**
+    * Override is here mainly to simplify property based tests in `StockActorStorageSpec`
+    * @param obj
+    * @return
+    */
   override def equals(obj: scala.Any): Boolean = obj match {
     case other: StockItem => id.value.toLowerCase == other.id.value.toLowerCase
     case _ => false

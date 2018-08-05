@@ -28,6 +28,9 @@ object StockApp extends App {
   val interface: String = config.getString("listen.interface")
   val port: Int = config.getInt("listen.port")
 
+  /**
+    * Timeout for ask pattern in `StockActorStorage` (should not apply, since it is just single node configuration)
+    */
   implicit val databaseTimeout: Timeout = Timeout(30 seconds)
 
   val api: StockApi = new StockApi(new StockActorStorage())
